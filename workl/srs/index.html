@@ -21,21 +21,27 @@
       <h1>Регистрация</h1>
       &#10140;
     </div>
+
+
     <form method="post" action="form.php">
       <div>
         <label for="name">Имя</label>
-        <input type="text" name="name" required>
+        <input type="text" required name="name" autofocus  placeholder="Имя">
       </div>
       <div>
         <label for="surname">Фамилия</label>
-        <input type="text" name="surname" required>
+        <input type="text" name="surname" required placeholder="Фамилия">
+      </div>
+      <div  >
+        <label " for="phone">Номер телефона</label>
+        <input type="text" name="phone" placeholder="Ваш телефон"  >
       </div>
 
 
       <div class="radio">
         <span>Пол</span>
               <label>
-                <input type="radio" name="sex" value="мужской" >мужской
+                <input type="radio" name="sex" value="мужской">мужской
                 <div class="radio-control male"> М </div>
                 
               </label>
@@ -48,7 +54,7 @@
       
       <div>
         <label for="email">E-mail</label>
-        <input type="email" name="email" required>
+        <input type="email" name="email" required required placeholder="email" >
       </div>
       <div>
         <label for="country">Страна</label>
@@ -79,8 +85,9 @@
     </form> 
   </div>
   
-  
-  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./../../workl/srs/js/jquery.maskedinput.min.js"></script>
+  <script src="./../../workl/srs/js/script.js"></script>
   
 
     
